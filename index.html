@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de estimación</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Chart.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <!--Inicio basado en LDC-->
+            <div class="col" id="form_basado_en_ldc">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>Basado en líneas de código</h5>
+                                <h6>Modelo Walson - Felix</h6>                                
+                            </div>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <label for="linea_codigo_form">Líneas de código</label>
+                                    <input type="text" class="form-control" id="linea_codigo_form_input">
+                                </div>
+                                <div class="row col">
+                                    <p id="valor">Valor: $0 COP</p>
+                                </div>
+                                <button href="#" class="btn btn-primary" id="calcular_ldc">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin basado en LDC-->
+            <!--Inicio basado en COCOMO-->
+            <div class="col" id="form_basado_en_cocomo">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>Basado en COCOMO</h5>
+                                <h6>COCOMO intermedio</h6>                                
+                            </div>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <label for="cocomo_form_ai">a<sub>i</sub></label>
+                                    <input type="text" class="form-control" id="cocomo_form_ai">
+                                    <label for="cocomo_form_ldc">Líneas de código</label>
+                                    <input type="text" class="form-control" id="cocomo_form_ldc">
+                                    <label for="cocomo_form_bi">b<sub>i</sub></label>
+                                    <input type="text" class="form-control" id="cocomo_form_bi">
+                                    <label for="cocomo_form_fae">FAE</label>
+                                    <input type="text" class="form-control" id="cocomo_form_fae">
+                                </div>
+                                <div class="row col">
+                                    <p id="valor_cocomo">Valor: $0 COP</p>
+                                </div>
+                                <button href="#" class="btn btn-primary" id="calcular_cocomo">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin basado en COCOMO-->
+            <!--Inicio basado en Puntos de funcion-->
+            <div class="col" id="form_basado_en_cocomo">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h5>Basado en puntos de función</h5>
+                                <h6>Modelo de regresión para proyecto pequeño</h6>                                
+                            </div>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <label for="puntos_de_funcion_form">Puntos de función</label>
+                                    <input type="text" class="form-control" id="puntos_de_funcion_input">
+                                </div>
+                                <div class="row col">
+                                    <p id="valor_puntos_funcion">Valor: $0 COP</p>
+                                </div>
+                                <button href="#" class="btn btn-primary" id="calcular_puntos_funcion">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin basado en Puntos de funcion-->
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
